@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<title>TEST</title>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css" media="all"/>
+<script>
+document.oncontextmenu = function () {return false;}
+</script>
+	
+</head>
+<body>
+
+<header id="global-head">
+	<h1 id="brand-logo">Logo</h1>
+</header>
+
+<div id="nav-toggle">
+	<div>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+
+<aside id="sidebar">
+	<nav id="global-nav">
+		<ul>
+			<li class="nv01"><a href="#">図面検索</a></li>
+			<!--li class="nv02 sub-menu">
+				<a href="#" class="sub-menu-head">図面登録</a>
+				<ul class="sub-menu-nav">
+					<li><a href="#">About 1</a></li>
+					<li><a href="#">About 2</a></li>
+					<li><a href="#">About 3</a></li>
+					<li><a href="#">About 4</a></li>
+					<li><a href="#">About 5</a></li>
+					<li><a href="#">About 6</a></li>
+				</ul>
+			</li-->
+			<li class="nv02"><a href="#">図面登録</a></li>
+			<li class="nv03"><a href="#">管理者メニュー</a></li>
+			<li class="nv04"><a href="#">マスタ登録</a></li>
+			<li class="nv05"><a href="#">ユーザ管理</a></li>
+			<li class="nv06"><a href="#">システム管理</a></li>
+			<li class="nv07"><a href="#">システムログ</a></li>
+			<li class="nv08"><a href="#">ログアウト</a></li>
+		</ul>
+	</nav>
+</aside>
+
+<main id="main">
+  <div id="main-in">
+		<div class="header">ユーザー名：XXXX</div>
+	  <section class="inner">
+		  <form action="result.html" method="get">
+		  <h3>図面検索</h3>
+		  <div class="bace">
+			  <ul class="forms">
+				  <li><label for="direct">ダイレクト検索</label><input type="text" name="direct" value="" class="textbox"></li>
+				  
+				  <li><label for="listsearch">リスト検索</label><select name="listsearch" class="selectbox">
+<option hidden>選択してください</option>
+<option value="AAA">AAA</option>
+<option value="BBB">BBB</option>
+<option value="CCC">CCC</option>
+					  </select></li>
+			    <li><label for="enduser">エンドユーザー</label><select name="enduser" class="selectbox">
+<option hidden>選択してください</option>
+<option value="AAA">AAA</option>
+<option value="BBB">BBB</option>
+<option value="CCC">CCC</option>
+</select></li>
+				  <li><label for="ukeoi">請負会社</label><select name="ukeoi" class="selectbox">
+<option hidden>選択してください</option>
+<option value="DDD">DDD</option>
+<option value="EEE">EEE</option>
+<option value="FFF">FFF</option>
+</select></li>
+				  <li><label for="siyou">仕様</label><select name="siyou" class="selectbox">
+<option hidden>選択してください</option>
+<option value="GGG">GGG</option>
+<option value="HHH">HHH</option>
+<option value="III">III</option>
+</select></li>
+				  <li><label for="maker">メーカー</label><select name="maker" class="selectbox">
+<option hidden>選択してください</option>
+<option value="JJJ">JJJ</option>
+<option value="KKK">KKK</option>
+<option value="LLL">LLL</option>
+</select></li>
+				  <li><label for="cartype">車型</label><select name="cartype" class="selectbox">
+<option hidden>選択してください</option>
+<option value="MMM">MMM</option>
+<option value="NNN">NNN</option>
+<option value="OOO">OOO</option>
+</select></li>
+				  <li><label for="number">番号</label><select name="number" class="selectbox">
+<option hidden>選択してください</option>
+<option value="PPP">PPP</option>
+<option value="QQQ">QQQ</option>
+<option value="RRR">RRR</option>
+</select></li>
+				  <li>
+				    <label for="claim">クレーム</label><br /><input type="radio" name="claim" value="あり" class="rb"> あり
+<input type="radio" name="claim" value="なし" class="rb"> なし</li>
+			  </ul>
+			  
+		 <div class="sb_bace">
+			 <input type="reset" value="クリア" class="sb_reset">
+			 <input type="submit" value="検索する" class="sb_search">
+		 </div>
+	</form>
+			  
+		  </div>
+
+	  </section>
+	</div><!-- /#main-in -->
+</main>
+
+<div id="overlay"></div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
